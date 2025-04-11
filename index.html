@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>Dummy Website</title>
+    <title>Cosmo Website</title>
     <style>
         body {
             font-family: 'Poppins', Arial, sans-serif;
@@ -110,7 +110,26 @@
         <p>Email: contact@dummywebsite.com</p>
         <button>Get in Touch</button>
     </section>
-   
+   <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgK000001kRr3',
+				'CosmoFirst',
+				'https://orgfarm-a616711d07-dev-ed.develop.my.site.com/ESWCosmoFirst1744350205020',
+				{
+					scrt2URL: 'https://orgfarm-a616711d07-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-a616711d07-dev-ed.develop.my.site.com/ESWCosmoFirst1744350205020/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 </body>
 
 </html>
